@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="utf-8">
+        <title>Battaglia navale</title>
+        <link rel="stylesheet" href="css/battaglia_navale.css">
+    </head>
+    <body>
+        <h1 id="tabellone">BATTAGLIA NAVALE</h1>
+        <div class="contenitore">
+            <table class ="tabella">
+            <caption id = "giocatore1" onclick = "inserisci_nome()">Tabella1/Inserisci il tuo nome</caption>
+               <tr class="riga1">
+                    <td></td><td class ="senza">1</td><td class ="senza">2</td><td class ="senza">3</td><td class ="senza">4</td><td class ="senza">5</td><td class ="senza">6</td><td class ="senza">7</td><td class ="senza">8</td><td class ="senza">9</td><td class ="senza">10</td>
+                </tr> 
+                <tr class="riga">
+                    <td class = "senza">A</td><td class = "io"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr> 
+                <tr class="riga">
+                    <td class = "senza">B</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr> 
+                <tr class="riga">
+                    <td class = "senza">C</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr> 
+                <tr class="riga">
+                    <td class = "senza">D</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr> 
+                <tr class="riga">
+                    <td class = "senza">E</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr> 
+                <tr class="riga">
+                    <td class = "senza">F</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr> 
+                <tr class="riga">
+                    <td class = "senza">G</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr> 
+                <tr class="riga">
+                    <td class = "senza">H</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr> 
+                <tr class="riga">
+                    <td class = "senza">I</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr> 
+                <tr class="riga">
+                    <td class = "senza">J</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr> 
+            </table>
+            <table class ="tabella">
+            <caption id = "giocatore2" onclick = "inserisci_nome1()">Tabella2/Inserisci il tuo nome</caption>
+                <tr class="riga1">
+                    <td></td><td class ="senza">1</td><td class ="senza">2</td><td class ="senza">3</td><td class ="senza">4</td><td class ="senza">5</td><td class ="senza">6</td><td class ="senza">7</td><td class ="senza">8</td><td class ="senza">9</td><td class ="senza">10</td>
+                </tr> 
+                <tr class="riga">
+                    <td class = "senza">A*</td><td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr> 
+                <tr class="riga">
+                    <td class = "senza">B*</td><td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr> 
+                <tr class="riga">
+                    <td class = "senza">C*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr> 
+                <tr class="riga">
+                    <td class = "senza">D*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr> 
+                <tr class="riga">
+                    <td class = "senza">E*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr> 
+                <tr class="riga">
+                    <td class = "senza">F*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr> 
+                <tr class="riga">
+                    <td class = "senza">G*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr> 
+                <tr class="riga">
+                    <td class = "senza">H*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr> 
+                <tr class="riga">
+                    <td class = "senza">I*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr class="riga">
+                    <td class = "senza">J*</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>  
+            </table>
+        </div>
+        <script src="javascript/battaglia_navale.js"></script> 
+        <footer>
+        <div id="nave">
+            <button class="testo1" class = "testo"  onclick = "audio(),avviso(),attiva_disegna()">DISEGNA</button>
+            <button class="navi" class = "colore" id="blue" onclick = "blue()"></button>
+            <button class="navi" class = "colore"  id="gold" onclick = "gold()"></button>
+            <button class="navi" class = "colore"  id="green" onclick = "green()"></button>
+            <button class="navi" class = "colore"  id="brown" onclick = "brown()"></button>
+            <button class ="invisibile" onclick = "nascondi()">NASCONDI</button>
+            <button class ="gioca" onclick = "gioca()">GIOCA</button>
+            <button class = "spiegazioni"  onclick = "spiegazioni()">SPIEGAZIONI</button>
+            <button class = "annulla"  onclick = "annulla()">ANNULLA</button>
+        </div>
+        <audio id = "uno">
+            <source src="audio/salamisound_onde.mp3" type="audio/mpeg">
+        </audio>
+        <audio id = "tre">
+            <source src="audio/salamisound_aplausi.mp3" type="audio/mpeg">
+        </audio>
+     </footer>
+    </body>    
+</html>

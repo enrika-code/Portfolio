@@ -1,0 +1,155 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#2f2d2d;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#FFFFFF;
+    font-size: 26px;
+}
+
+.top{
+    background-color: #ef3e4791;
+    text-align: center;
+    padding: 2px 0;
+}
+
+.top1{
+    background-color: #ef3e4791;
+    text-align: center;
+}
+
+footer {
+    padding: 20px 0;
+}
+
+#link{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#link a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 5px;
+}
+
+#terms{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#social{
+    padding: 20px;
+    display: inline-flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+form {
+    background-color: #4f4a4a;
+    max-width: 900px;
+    margin: 40px 20px 20px 20px;
+    padding: 20px 30px;
+    border: 2px solid  rgb(139, 5, 5);;
+    outline: 3px solid white;
+    outline-offset: 5px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+form input{
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 3px solid white;
+}
+
+form textarea {
+    width: 97%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 3px solid white;
+}
+
+#button{
+    display: flex;
+    justify-content: right;  
+}
+
+#button input{
+    background:white;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#button input:hover{
+    background-color: rgb(139, 5, 5);
+    color: white;
+}
+
+#yes{
+    height: 20px;
+}
+
+#communicationForm{
+    flex: 1 0 auto;
+}
+
+#cities ul {
+    text-align: center;
+    padding: 10px;
+}
+
+#cities li {
+    display: inline;
+    margin: 0 10px;
+}
+
+#cities a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 22px; 
+}
+
+#cities a:hover,#terms a:hover{
+    background-color:  white;
+    color: rgb(139, 5, 5);
+}
+
+@media screen and (min-width: 768px) {
+    form {
+        margin: 40px auto;
+    }
+    #button input{
+        width: 40%;
+    }
+    h3{
+        font-size: 25px;
+}
+
+}
+

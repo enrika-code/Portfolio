@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <title>Slot machine</title>
+        <link rel="stylesheet" href="slot_machine.css">
+        <script src="slot_machine.js"></script>
+    </head>
+    <body>
+        <main>
+            <div id = "main">
+                <div class="machine">
+                    <div class = "finestra"><img id="prima" src ="image/uva.png"></div>
+                    <div class = "finestra"><img id="seconda" src ="image/limone.png"></div>
+                    <div class = "finestra"><img id="terza" src ="image/fragola.png"></div>
+                    <audio>
+                        <source src="salamisound.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <div id="pulsante">
+                    <button type="button" onclick = "gira()" class = "buttone">GIOCA</button>
+                </div>
+                <div class ="scritta" id = "testo">PROVA FORTUNA!</div>
+            </div>        
+        </main>
+    </body>
+</html>

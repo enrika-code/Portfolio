@@ -1,0 +1,194 @@
+body{
+	background-image: linear-gradient(to left,#211d1f,#651F32);
+	margin: 50px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	color: #f7ced3; 
+}
+
+@keyframes fadeAnimation {
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1; 
+    }
+}
+
+#header_one{
+	opacity: 0;
+	animation-name: fadeAnimation; 
+    animation-duration: 10s;
+	animation-delay: 1s;
+    animation-timing-function: cubic-bezier(0.29, 0.46, 0.45, 0.94); 
+    animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+#header_two{
+	opacity: 0;
+	animation-name: fadeAnimation; 
+    animation-duration: 20s; 
+	animation-delay: 3s;
+    animation-timing-function: cubic-bezier(0.29, 0.46, 0.45, 0.94); 
+    animation-iteration-count: 1; 
+	animation-fill-mode: forwards;
+}
+
+#header_three{
+	opacity: 0;
+	animation-name: fadeAnimation; 
+    animation-duration: 20s; 
+	animation-delay: 6s;
+    animation-timing-function: cubic-bezier(0.29, 0.46, 0.45, 0.94); 
+    animation-iteration-count: 1; 
+	animation-fill-mode: forwards;
+}
+
+#header_four{
+	opacity: 0;
+	animation-name: fadeAnimation;
+    animation-duration: 20s; 
+	animation-delay: 9s;
+    animation-timing-function: cubic-bezier(0.29, 0.46, 0.45, 0.94); 
+    animation-iteration-count: 1; 
+	animation-fill-mode: forwards;
+}
+
+#header_five{
+    opacity: 0;
+	animation-name: fadeAnimation; 
+    animation-duration: 20s; 
+	animation-delay: 12s;
+    animation-timing-function: cubic-bezier(0.29, 0.46, 0.45, 0.94); 
+    animation-iteration-count: 1; 
+	animation-fill-mode: forwards;
+}
+
+#header_six{
+    opacity: 0;
+	animation-name: fadeAnimation; 
+    animation-duration: 20s; 
+	animation-delay: 15s;
+    animation-timing-function: cubic-bezier(0.29, 0.46, 0.45, 0.94); 
+    animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+#header_seven{
+    opacity: 0;
+	animation-name: fadeAnimation; 
+    animation-duration: 20s; 
+	animation-delay: 18s;
+    animation-timing-function: cubic-bezier(0.29, 0.46, 0.45, 0.94); 
+    animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+h1{	
+	text-align: center;
+	font-size: 40px;
+}
+
+h2{
+	margin-top: 30px;
+	text-align: center;
+	font-size: 30px;
+}
+
+h3{
+	text-align: center;
+	margin: 30px;
+}
+
+p{
+	margin-top: 50px;
+	line-height: 1.5;
+	font-size: 20px;
+	text-align: left;
+	text-indent: 20px;
+}
+
+a{
+	margin-top: 50px;
+	line-height: 1.5;
+	font-size: 20px;
+	text-align: left;
+	color: #f7ced3;
+	font-size: 23px;
+}
+
+a:visited{
+	color:#FFFFFF;
+}
+
+a:hover{
+	background-color: #f7ced3;
+	color: #000000;
+}
+
+div{
+	display: flex;
+	justify-content: center;
+	height: auto;
+	align-items: center;
+	max-width: 100%;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+nav{
+	display: flex;
+	flex-direction: column;
+}
+
+#figure{
+	background-color:rgb(113, 6, 27);
+	background-image: url("rugiada.png");
+	background-blend-mode: hard-light;
+	width: 100%;
+	height: 50px;
+}
+
+#back{
+	display: flex;
+	justify-items: center;
+}
+
+#footer{
+	display: flex;
+	justify-items: center;
+	padding-top: 15px;
+	font-size: 20px;
+}
+
+.flag {
+  	position: relative;
+ 	cursor: help;
+}
+
+.flag::after {
+  	content: attr(data-testo); 
+  	position: absolute;
+  	bottom: 125%;
+  	left: 50%;
+  	transform: translateX(-50%);
+  
+  
+  	background-color: #333;
+  	color: #fff;
+  	padding: 8px 12px;
+  	border-radius: 4px;
+  	white-space: normal; 
+  	width: 200px; 
+ 	opacity: 0;
+  	pointer-events: none;
+  	transition: opacity 0.2s ease-in-out;
+}
+
+.flag:hover::after {
+  	opacity: 1;
+}
+
+
+
+

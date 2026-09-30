@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>a lecture on life</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <div id="videocontainer">
+                <video id="vita" muted playsinline>
+                    <source src="vita.mp4" type="video/mp4">
+                    Il tuo browser non supporta i video HTML5.
+                </video>
+                <div class="content">
+                    <h1 class="text">A Lecture on Life</h1>
+                    <h2 id="maintext" class="text">
+                        If your life were a book written by someone else, would you be interested in reading it? If the answer makes you hesitate, it’s time to turn the 
+                        page. We invite you to a lecture, open to everyone, to reflect together on the priceless value of our time."
+                    </h2> 
+                    <p id="clicca">Click on the page to start the video</p>
+                    <h2 id="endtext">We look forward to seeing you on April 20th at the Art Theater at 6:00 PM.</h2>
+                </div>
+            </div>
+        </main>
+        <script>
+            const video = document.getElementById('vita');
+            let para = document.getElementsByTagName("p")[0];
+            let para1= document.getElementById('endtext');
+            let ti = document.getElementsByClassName('text');
+
+                document.body.addEventListener('click', function() {
+                video.muted = false;
+                video.play();
+                para.style.display="none";
+                
+                for(let element of ti){
+                    element.style.display="none"};
+                }, { once: true }); 
+
+                video.addEventListener('ended', function() {
+                para1.style.display = "block";
+                });
+        </script>
+    </body>
+</html>

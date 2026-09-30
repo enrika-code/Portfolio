@@ -1,0 +1,146 @@
+html, body {
+    overflow: auto;
+}
+
+body {
+    background-color:#2f2d2d;
+}
+
+header{
+    color: #fff;
+    text-align: left;
+}
+
+h1, h2, h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    font-size: 24px;
+    text-align: center;
+}
+ 
+h1{
+    margin: 20px 0;
+    background-color: #ef3e4791; 
+    padding: 5px 0;
+    font-size: 32px;
+
+}
+
+h2{     
+    background-color: #ef3e4791; 
+    padding: 10px 0;
+}
+
+figure{
+    margin:0;
+    padding:0;
+    border: 2px solid rgb(139, 5, 5);
+    outline: 3px solid white;
+    outline-offset: 5px;
+}
+
+figcaption{
+    display: flex;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+    font-style: italic;
+    margin-top: 8px;
+}
+
+p{
+   font-family: Arial, Helvetica, sans-serif;
+   color: #FFFFFF;
+   font-size: 22px; 
+   margin: 10px;
+   padding: 10px 0;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;  
+}
+
+footer a svg{
+    color: white;
+}
+
+@media screen and (min-width: 768px) {
+  img{
+    width: 100%;
+    height: 680px;
+    margin-top: 20px;  
+    object-fit: cover;
+    }
+}
+
+footer {
+    padding: 20px 0;
+}
+
+#link{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#link a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 5px;
+}
+
+#terms{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#social{
+    padding: 20px;
+    display: inline-flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+iframe{
+    margin: auto;
+    padding: 0;
+    border: 2px solid rgb(139, 5, 5);
+    outline: 3px solid white;
+    outline-offset: 5px;
+    display: block;
+    justify-self: center;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+}
+
+#cities ul {
+    text-align: center;
+    padding: 10px;
+}
+
+#cities li {
+    display: inline;
+    margin: 0 10px;
+}
+
+#cities a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 22px; 
+}
+
+#cities a:hover,#terms a:hover{
+    background-color:  white;
+    color: rgb(139, 5, 5);
+}
