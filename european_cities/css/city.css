@@ -72,7 +72,16 @@ footer a svg{
 @media screen and (min-width: 768px) {
   img{
     width: 100%;
-    height: 380px;
+    height: 680px;
+    margin-top: 20px;  
+    object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+  img{
+    width: 100%;
+    height: 360px;
     margin-top: 20px;  
     object-fit: cover;
     }
