@@ -82,21 +82,21 @@ button{
 
 @media screen and (max-width: 786px) and (orientation: portrait){
     h1{
-        margin-top: 100px;
-        font-size: 8.00vw;
+        margin-top: 140px;
+        font-size: 10.2vw;
     }
 
     h2,h3{
         margin-top: 50px;
-        font-size: 5.50vw;  
+        font-size: 5.70vw;  
         padding: 0px 25px; 
-        line-height: 1.2;
+        line-height: 2;
     }
 
     button{
         margin-top: 50px;
         font-size: 3.50vw;
-        height: 5.50vw;
+        height: 5.70vw;
     }
 
     #menu{
