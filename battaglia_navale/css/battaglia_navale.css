@@ -32,7 +32,7 @@ body{
     width: 10px;
 }
 
-.indice {
+.senza{
     border: 0px;
     color:rgb(60, 8, 9);
     font-family: sans-serif;
@@ -55,11 +55,30 @@ table,td {
     width: 35px;       
 }
 
+@keyframes lampeggia{
+    100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.3;
+    }
+    0%{
+        opacity: 1;
+    }
+}
+
 caption{
     color: white;
     font-size: 18px;
     background-color: rgb(17, 68, 113);
     padding: 5px;
+    opacity: 1;
+    animation-name: lampeggia;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: 4;
+    animation-timing-function: ease-in-out;
+
 }
 
 #menu {
@@ -73,33 +92,33 @@ caption{
     padding: 5px;
 }
 
-.pulsantecolore{
+.colore{
     width: 35px;
     height: 35px;
     margin: 15px;   
 }
 
-#blue{
+.blue{
     background-color: rgba(64, 24, 239, 0.649);
     border: 3px double black;
 }
 
-#gold{
+.gold{
     background-color:rgb(255, 179, 0);
     border: 3px double black;
 }
 
-#green{
+.green{
     background-color:rgb(18, 213, 18);
     border: 3px double black;
 }
 
-#brown{
+.brown{
     background-color: rgb(162, 5, 5);
     border: 3px double black;
 }
 
-.pulsantenascondi,.gioca,.spiegazioni,.annulla,.testo{
+.invisibile,.gioca,.spiegazioni,.annulla,.disegna{
     width: 150px;
     height: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
