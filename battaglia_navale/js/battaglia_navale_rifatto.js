@@ -91,6 +91,9 @@ function segna(event){
                         if(giocatore1 === 0){
                             stato = false;
                             let nome = document.getElementById("giocatore2").innerHTML;
+                            if(nome === "Tabella2/Inserisci il tuo nome"){
+                                nome = "Giocatore2";
+                            }
                             document.getElementById("tabellone").innerHTML = (`Complimenti, ${nome}, hai vinto!`);
                             audio2(); 
                             for(let i = 0; i < arrayDiCelle.length; i++){
@@ -103,6 +106,9 @@ function segna(event){
                         if(giocatore2 === 0){        
                             stato = false;
                             let nome = document.getElementById("giocatore1").innerHTML;
+                            if(nome === "Tabella1/Inserisci il tuo nome"){
+                                nome = "Giocatore1";
+                            }
                             document.getElementById("tabellone").innerHTML = (`Complimenti, ${nome}, hai vinto!`);
                             audio2();
                             for(let i = 0; i < arrayDiCelle.length; i++){
