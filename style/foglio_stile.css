@@ -28,7 +28,7 @@ body{
 	opacity: 0;
 	animation-name: fadeAnimation; 
     animation-duration: 20s; 
-	animation-delay: 3s;
+	animation-delay: 2s;
     animation-timing-function: cubic-bezier(0.29, 0.46, 0.45, 0.94); 
     animation-iteration-count: 1; 
 	animation-fill-mode: forwards;
@@ -38,7 +38,7 @@ body{
 	opacity: 0;
 	animation-name: fadeAnimation; 
     animation-duration: 20s; 
-	animation-delay: 6s;
+	animation-delay: 4s;
     animation-timing-function: cubic-bezier(0.29, 0.46, 0.45, 0.94); 
     animation-iteration-count: 1; 
 	animation-fill-mode: forwards;
@@ -48,7 +48,7 @@ body{
 	opacity: 0;
 	animation-name: fadeAnimation;
     animation-duration: 20s; 
-	animation-delay: 9s;
+	animation-delay: 6s;
     animation-timing-function: cubic-bezier(0.29, 0.46, 0.45, 0.94); 
     animation-iteration-count: 1; 
 	animation-fill-mode: forwards;
@@ -58,7 +58,7 @@ body{
     opacity: 0;
 	animation-name: fadeAnimation; 
     animation-duration: 20s; 
-	animation-delay: 12s;
+	animation-delay: 8s;
     animation-timing-function: cubic-bezier(0.29, 0.46, 0.45, 0.94); 
     animation-iteration-count: 1; 
 	animation-fill-mode: forwards;
@@ -68,7 +68,7 @@ body{
     opacity: 0;
 	animation-name: fadeAnimation; 
     animation-duration: 20s; 
-	animation-delay: 15s;
+	animation-delay: 10s;
     animation-timing-function: cubic-bezier(0.29, 0.46, 0.45, 0.94); 
     animation-iteration-count: 1;
 	animation-fill-mode: forwards;
@@ -78,7 +78,7 @@ body{
     opacity: 0;
 	animation-name: fadeAnimation; 
     animation-duration: 20s; 
-	animation-delay: 18s;
+	animation-delay: 12s;
     animation-timing-function: cubic-bezier(0.29, 0.46, 0.45, 0.94); 
     animation-iteration-count: 1;
 	animation-fill-mode: forwards;
